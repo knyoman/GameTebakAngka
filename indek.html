@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>🎲 Tebak Angka</h1>
+
+            <div id="setup-section">
+                <p>Masukkan angka maksimum untuk memulai:</p>
+                <input type="number" id="max-input" placeholder="Misal: 10, 100, 1000">
+                <button id="start-btn">Mulai Game</button>
+            </div>
+
+            <div id="game-section" class="hidden">
+                <p>Saya memikirkan angka antara <strong>1</strong> sampai <strong id="display-max"></strong>.</p>
+                <input type="number" id="guess-input" placeholder="Tebakan kamu...">
+                <button id="guess-btn">Tebak!</button>
+
+                <div class="stats">
+                    <span>Percobaan: <b id="attempts-count">0</b></span>
+                </div>
+            </div>
+
+            <p id="message" class="message"></p>
+
+            <button id="reset-btn" class="hidden secondary-btn">Main Lagi</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
